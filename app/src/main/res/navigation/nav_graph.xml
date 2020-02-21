@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/currentLocation">
+
+    <fragment
+        android:id="@+id/currentLocation"
+        android:name="com.example.locationapiusingmvvm.CurrentLocation"
+        android:label="fragment_current_location"
+        tools:layout="@layout/fragment_current_location" />
+    <fragment
+        android:id="@+id/currentWeatherFragment"
+        android:name="com.example.locationapiusingmvvm.CurrentWeatherFragment"
+        android:label="fragment_current_weather"
+        tools:layout="@layout/fragment_current_weather" />
+    <fragment
+        android:id="@+id/forecastWeatherFragment"
+        android:name="com.example.locationapiusingmvvm.ForecastWeatherFragment"
+        android:label="fragment_forecast_weather"
+        tools:layout="@layout/fragment_forecast_weather" />
+</navigation>

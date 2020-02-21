@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="#8226DD"
+    app:cardCornerRadius="10dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/forecastWeatherDate"
+            android:textColor="#FFFFFF"
+            tools:text="date"
+            android:textSize="25sp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/forecastWeatherDate"
+            android:id="@+id/forecastWeatherImage"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/forecastWeatherTemp"
+            android:layout_marginLeft="70dp"
+            android:layout_toRightOf="@id/forecastWeatherImage"
+            android:textColor="#FFFFFF"
+            tools:text="temp"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/forecastWeatherSunrise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            tools:text="sunrise" />
+        <TextView
+            android:id="@+id/forecastWeatherCloudiness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/forecastWeatherSunrise"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            tools:text="cloudiness" />
+
+        <TextView
+            android:id="@+id/forecastWeatherSunset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/forecastWeatherCloudiness"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            tools:text="sunset" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
